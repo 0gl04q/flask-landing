@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0gl04q - Backend developer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="scroll-indicator"></div>
+
+    <nav>
+        <div class="logo">0gl04q</div>
+        <div class="nav-links">
+            <a href="#home">Главная</a>
+            <a href="#technologies">Технологии</a>
+            <a href="#projects">Проекты</a>
+            <a href="#stats">Статистика</a>
+            <a href="#process">Процесс</a>
+            <a href="#benefits">Преимущества</a>
+            <a href="#contact">Контакты</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>0gl04q</h1>
+            <h2>Backend разработчик</h2>
+            <div class="typing-text" id="typing-text"></div>
+        </div>
+    </section>
+
+    <!-- Секция технологий -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <h2 class="section-title">Технологический стек</h2>
+            <div class="tech-showcase">
+                <div class="tech-category-main">
+                    <div class="tech-category-header">
+                        <div class="tech-icon">🐍</div>
+                        <h3>Языки программирования</h3>
+                    </div>
+                    <div class="tech-items-main">
+                        <div class="tech-item">
+                            <div class="tech-logo">Python</div>
+                            <div class="tech-level">
+                                <div class="tech-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">Go</div>
+                            <div class="tech-level">
+                                <div class="tech-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">SQL</div>
+                            <div class="tech-level">
+                                <div class="tech-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">1С</div>
+                            <div class="tech-level">
+                                <div class="tech-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-categories-grid">
+                    <div class="tech-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">⚡</div>
+                            <h4>Фреймворки</h4>
+                        </div>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">Gin</span>
+                            <span class="tech-badge">Gorilla Mux</span>
+                            <span class="tech-badge">Mattermost</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">🗄️</div>
+                            <h4>Базы данных</h4>
+                        </div>
+                        <div class="tech-badges">
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">1С</span>
+                            <span class="tech-badge">Redis</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">🔧</div>
+                            <h4>Инструменты</h4>
+                        </div>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Git</span>
+                            <span class="tech-badge">Linux</span>
+                            <span class="tech-badge">RabbitMQ</span>
+                            <span class="tech-badge">Kafka</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция проектов -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🐾</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Backend мобильного приложения для мониторинга животных</h3>
+                        <p class="project-description">Разработка серверной части для сбора телеметрии, хранения истории данных и предоставления API для мобильного клиента</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Celery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">📞</div>
+                    <div class="project-content">
+                        <h3 class="project-title">WebRTC-сервис для VoIP-звонков</h3>
+                        <p class="project-description">Разработка сервера, совмещающего сигнальный и медиасервер. Сервис инициирует звонки, управляет сессиями и состояниями соединений</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">WebRTC</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">STUN/TURN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🔌</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Плагины для Mattermost</h3>
+                        <p class="project-description">Разработка плагинов для интеграции с внешними сервисами и улучшения функционала Mattermost</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">GORM</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Mattermost API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция статистики -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Лет опыта</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% довольных клиентов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Часа поддержки</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция процесса работы -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2 class="section-title">Мой процесс работы</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">🔍</div>
+                    <h3>Анализ требований</h3>
+                    <p>Детальное изучение задач, архитектурное планирование и выбор оптимальных технологий</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">💻</div>
+                    <h3>Разработка</h3>
+                    <p>Создание качественного кода с соблюдением лучших практик и стандартов</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">🧪</div>
+                    <h3>Тестирование</h3>
+                    <p>Комплексное тестирование функциональности, производительности и безопасности</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">🚀</div>
+                    <h3>Развертывание</h3>
+                    <p>Безопасный деплой в продакшн с настройкой мониторинга и поддержки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция преимуществ -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают меня</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Высокая производительность</h3>
+                    <p>Оптимизирую код для максимальной скорости работы и минимального потребления ресурсов</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Безопасность</h3>
+                    <p>Внедряю современные практики безопасности и защиты от уязвимостей</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Масштабируемость</h3>
+                    <p>Создаю архитектуру, которая легко масштабируется под растущие нагрузки</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔧</div>
+                    <h3>Поддержка</h3>
+                    <p>Обеспечиваю техническую поддержку и сопровождение проектов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Связаться со мной</h2>
+            <div class="contact-container">
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Тема</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="form-btn">Отправить сообщение</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <span>0gl04q@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📱</span>
+                            <span>+7 (930) 061-45-35</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>🐙</span>
+                            <span>GitHub: 0gl04q</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 0gl04q. Все права защищены.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
