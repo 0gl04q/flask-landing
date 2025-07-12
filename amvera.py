@@ -16,8 +16,6 @@ class StandaloneApplication(BaseApplication):
 
 if __name__ == '__main__':
     options = {
-        "bind": "0.0.0.0:8000",
-        "workers": 4,
-        "reload": True
+        "bind": "0.0.0.0:8000"
     }
     StandaloneApplication(app, options).run()
