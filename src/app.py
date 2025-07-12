@@ -19,6 +19,3 @@ def send_form():
         msg = UserMessage(**request.form)
         send_message(msg)
         return {"message": "successful"}
-
-if __name__ == '__main__':
-  app.run(debug=True)
