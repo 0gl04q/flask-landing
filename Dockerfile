@@ -12,4 +12,4 @@ COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 COPY . /src
 
-CMD ["gunicorn", "--reload", "-w", "4", "-b", "0.0.0.0:8000", "src.app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "src.app:app"]
